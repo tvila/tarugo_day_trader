@@ -1,6 +1,6 @@
 **Tarugo Day Trader**
 
-Tarugo is a crypto trading bot that randomly trades daily on Kraken.com. Follow him on Twitter for the daily updates (**@TarugoTrader**).
+Tarugo is a crypto trading bot that randomly trades daily on Kraken.com. Follow him on Twitter for daily updates (**@TarugoTrader**).
 Developed for learning purposes by Toni Vila (@tvilafiol)
 
 **Main Features:**
