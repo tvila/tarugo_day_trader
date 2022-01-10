@@ -1,0 +1,1 @@
+# tarugo_day_trader
