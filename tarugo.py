@@ -603,5 +603,5 @@ def tarugo():
             print(f'\nLog Messages - Sleep until tomorrow {days_alive} {datetime.now()} {sleep_until_tomorrow}')
             sleep(sleep_until_tomorrow) 
             
-
+keep_alive()
 tarugo()
