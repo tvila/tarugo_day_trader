@@ -42,7 +42,7 @@ trades = [i for i in range(6)]
 strategy = ['Buy', 'Sell']
 quantity = [0.25, 0.5, 0.75, 1]
 
-min_balance_zeur = 10 # check if this continues this way
+min_balance_zeur = 10
 initial_zeur_balance = 100.42
 historical_balance = [100.42]
 
@@ -419,8 +419,6 @@ def tarugo_status_check():
         """
         tarugo_db = [i.replace('\n', '').split(',') for i in tarugo.readlines()]
 
-        #date_check = datetime.now() - datetime.strptime(tarugo_db[-1][-2], "%Y-%m-%d %H:%M:%S")).total_seconds() 
-
     if len(tarugo_db) == 0:
         return status_list[3]
 
@@ -452,20 +450,10 @@ def trading_strategy(current_trade, number_trades, days_alive, base_date):
         if bal_to_buy > min_balance_zeur:
             print(f'\nLog Messages - {days_alive} {datetime.now()}\nEstrategia: BUY -- Hay suficiente balance para comprar')
             print(buy_crypto())
-            # print(kraken_getbalance())
-
-        #elif strategy_trade == 'Buy':
-            #print(f'\nLog Messages - {days_alive} {datetime.now()}\nEstrategia: BUY')
-            #print(buy_crypto())
-            # print(kraken_getbalance())
-
+            
         else:
             print(f'\nLog Messages - {days_alive} {datetime.now()}\nEstrategia: SELL')
             print(sell_crypto())
-            # print(kraken_getbalance())
-
-        #else:
-            #print(f'\nLog Messages - {days_alive} {datetime.now()}\nEstrategia: HODL')
 
         print(trade_message(counter, number_trades))
         
