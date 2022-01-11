@@ -10,3 +10,5 @@ Developed for learning purposes by Toni Vila (@tvilafiol)
 - Choose randomly the volume to buy / sell (Between 25% to 100%)
 - Choose randomly a cryptocurrency to trade (as long as the minimum purchase / sale volume can be met.)
 - Choose randomly buy / sell operations. If the balance in Euro is superior to 10 €, the trade will be a buy. 
+
+Tarugo is hosted on replit.com and uptimerobot.com is used to keep the bot alive. 
